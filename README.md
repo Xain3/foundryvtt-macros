@@ -12,7 +12,10 @@ This repository contains a collection of macros for FoundryVTT, designed to enha
 - **shims/**: Contains shims or wrappers around the FoundryVTT API.
   - `foundry-api.js`: Simplifies interactions with the FoundryVTT API.
 
+- **test/**: Contains unit tests for the macros.
 - **package.json**: Configuration file for npm, listing dependencies and scripts.
+- **AGENTS.md**: Shared project guidance for coding agents.
+- **.cspell.json**: Configuration file for the Code Spell Checker, specifying custom words and spelling rules.
 
 ## Installation
 
@@ -35,10 +38,45 @@ Macros should have unit tests for their meaningful behavior. Use Node.js's built
 Place test files under `test/` with names ending in `.test.js`, then run the suite with:
 
 ```bash
-node --test
+# FoundryVTT Macros
+
+This repository contains small JavaScript macros and compatibility shims for Foundry VTT. Macros use the Foundry API and may require a specific Foundry version, module, or active canvas context; check each macro's header and documentation before use.
+
+## Project Structure
+
+- **macros/**: Foundry macro snippets and their [catalog and usage notes](macros/README.md).
+- **shims/**: Minimal Foundry API compatibility helpers for local development.
+- **test/**: Node.js unit tests for macro behavior outside a live Foundry session.
+- **AGENTS.md**: Shared project guidance for coding agents.
+- **package.json**: Project metadata and the test command.
+
+## Installation
+
+To use these macros, clone the repository and install the necessary dependencies:
+
+```bash
+git clone <repository-url>
+cd foundryvtt-macros
+npm install
 ```
 
-Stub the Foundry globals a macro needs so tests can run without a live Foundry session. These stubs verify the macro's behavior against the test setup, not the actual Foundry runtime.
+## Usage
+
+Load a macro into Foundry VTT using the method appropriate to your setup. Review its header and the [macro documentation](macros/README.md) for its purpose, compatibility requirements, and setup instructions.
+
+## Macro Headers
+
+Every macro should begin with a header describing its purpose and main behavior, authorship, MIT license, independently maintained version, and important runtime requirements. Include enough detail to explain key modes or effects without duplicating full documentation. Macro versions are independent of the package version and of other macros.
+
+## Testing
+
+Add unit tests for each macro's meaningful behavior using Node.js's built-in `node:test` runner and `node:assert/strict`. Put test files in `test/` and name them `*.test.js`. Run the suite from the repository root with:
+
+```bash
+npm test
+```
+
+Use focused test doubles for Foundry globals so tests can run without a live game session. Tests verify behavior against those doubles; they do not establish that the real Foundry runtime behaves identically.
 
 ## Contributing
 
