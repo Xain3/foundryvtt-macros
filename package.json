@@ -1,0 +1,20 @@
+{
+  "name": "foundryvtt-macros",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A collection of macros for FoundryVTT, including utilities and API shims.",
+  "main": "macros/utilities/hello-world.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "foundryvtt",
+    "macros",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    
+  }
+}
