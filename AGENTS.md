@@ -7,7 +7,7 @@ This repository contains Foundry VTT macro scripts and supporting compatibility 
 ## Core conventions
 
 - Keep macros as small, self-contained JavaScript snippets.
-- Start every macro with a header stating its purpose, author or authors, license (`MIT`), and version. Track each macro's version independently; do not derive it from the package version or another macro's version.
+- Start every macro with a header stating its purpose, a useful description of its main behavior and important requirements, its author or authors, license (`MIT`), and version. Make the description detailed enough to explain key modes or effects without duplicating full documentation. Track each macro's version independently; do not derive it from the package version or another macro's version.
 - Prefer clear, readable code over abstraction or unnecessary tooling.
 - Use the Foundry VTT API as the source of truth: reference the official API docs when making runtime assumptions.
 - Treat the shims as compatibility aids for local development and linting, not as a replacement for the actual Foundry runtime.
@@ -25,7 +25,7 @@ This repository contains Foundry VTT macro scripts and supporting compatibility 
 - Do not introduce framework dependencies unless the user explicitly asks for them.
 - Avoid Node-only assumptions in macro code that is expected to run inside Foundry VTT.
 - If a macro is meant to run in the Foundry runtime, it should follow Foundry API conventions rather than browser or Node conventions unless the file is explicitly a shim or local test helper.
-- Keep comments concise and useful; explain non-obvious Foundry API usage when needed.
+- Use concise JSDoc when it improves readability: summarize a function's purpose and document non-obvious parameters, return values, or side effects. Keep inline comments focused on non-obvious reasoning rather than narrating straightforward code.
 - Favor explicit, descriptive names for helpers and utility functions.
 
 ## Testing requirements
