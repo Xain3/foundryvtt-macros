@@ -45,7 +45,7 @@ This repository contains Foundry VTT macro scripts and supporting compatibility 
 
 ## Reference
 
-- Foundry VTT API: https://foundryvtt.com/api/
+- Foundry VTT API: <https://foundryvtt.com/api/>
 
 ## Examples of accepted work
 
