@@ -7,6 +7,7 @@ This repository contains a collection of macros for FoundryVTT, designed to enha
 - **macros/**: Contains the macro scripts and utilities.
   - **utilities/**: Includes utility functions and examples.
     - `hello-world.js`: A simple macro that logs "Hello, World!" to the console.
+    - `select-objects-by-tag.js`: A macro that selects objects based on their tags.
   - `README.md`: Documentation for the macros directory.
 
 - **shims/**: Contains shims or wrappers around the FoundryVTT API.

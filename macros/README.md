@@ -10,6 +10,10 @@ To use the macros in this directory, you can copy the desired macro code into th
 
 - **hello-world.js**: A simple utility that demonstrates how to log messages to the console. This can be a starting point for creating more complex macros.
 
+## Available Macros
+
+- **select-objects-by-tag.js**: Searches the active canvas layer for objects by Tagger tags, previews the result, and supports include/exclude filters and Replace/Add/Remove selection operations. A second run can deselect matches from the previous run without disturbing other selected objects. Requires Foundry VTT V12+ and the [Tagger module](https://github.com/fantasycalendar/FoundryVTT-Tagger).
+
 ## Contributing
 
 Feel free to contribute by adding new macros or improving existing ones. Make sure to follow the coding standards and test your macros before submitting a pull request.
