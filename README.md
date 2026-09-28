@@ -1,46 +1,5 @@
 # FoundryVTT Macros
 
-This repository contains a collection of macros for FoundryVTT, designed to enhance gameplay and streamline interactions within the platform. The macros are implemented in JavaScript and utilize the FoundryVTT API for various functionalities.
-
-## Project Structure
-
-- **macros/**: Contains the macro scripts and utilities.
-  - **utilities/**: Includes utility functions and examples.
-    - `hello-world.js`: A simple macro that logs "Hello, World!" to the console.
-    - `select-objects-by-tag.js`: A macro that selects objects based on their tags.
-  - `README.md`: Documentation for the macros directory.
-
-- **shims/**: Contains shims or wrappers around the FoundryVTT API.
-  - `foundry-api.js`: Simplifies interactions with the FoundryVTT API.
-
-- **test/**: Contains unit tests for the macros.
-- **package.json**: Configuration file for npm, listing dependencies and scripts.
-- **AGENTS.md**: Shared project guidance for coding agents.
-- **.cspell.json**: Configuration file for the Code Spell Checker, specifying custom words and spelling rules.
-
-## Installation
-
-To use these macros, clone the repository and install the necessary dependencies:
-
-```bash
-git clone <repository-url>
-cd foundryvtt-macros
-npm install
-```
-
-## Usage
-
-After installing, you can load the macros into your FoundryVTT environment. Refer to the individual macro documentation for specific usage instructions.
-
-## Testing
-
-Macros should have unit tests for their meaningful behavior. Use Node.js's built-in `node:test` runner with assertions from `node:assert/strict`; no additional test framework is required.
-
-Place test files under `test/` with names ending in `.test.js`, then run the suite with:
-
-```bash
-# FoundryVTT Macros
-
 This repository contains small JavaScript macros and compatibility shims for Foundry VTT. Macros use the Foundry API and may require a specific Foundry version, module, or active canvas context; check each macro's header and documentation before use.
 
 ## Project Structure
@@ -49,6 +8,7 @@ This repository contains small JavaScript macros and compatibility shims for Fou
 - **shims/**: Minimal Foundry API compatibility helpers for local development.
 - **test/**: Node.js unit tests for macro behavior outside a live Foundry session.
 - **AGENTS.md**: Shared project guidance for coding agents.
+- **.cspell.json**: Shared custom dictionary for Code Spell Checker.
 - **package.json**: Project metadata and the test command.
 
 ## Installation
